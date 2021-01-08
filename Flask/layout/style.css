@@ -1,0 +1,164 @@
+/* Note: This example only works with Windows Insider Preview Builds 16237+ or the Fall Creators Update. */
+
+body { 
+    /* background-image: "images/nav-background.png"; */
+	background-color: rgb(178, 178, 178);
+    
+    
+}
+
+
+h1, .title {
+    margin: 5% 0% 0% 5%;
+    color: whitesmoke;
+}
+
+.out {
+    margin: 5% 3% 4% 3%;
+    display: grid;
+    background-color: white;
+    /* opacity:0.5; */
+	grid-template-columns: 1fr 10% 1fr 10% 1fr;
+    height: 60vh;
+    grid-gap: 5px;
+    /* box-shadow: 5px 5px 5px 5px gray; */
+    box-shadow: 0px 0px 20px 10px gray;
+}
+
+.main {
+    /* background-color: aqua; */
+    
+    margin: 10px 10px;
+}
+.gap {
+    text-align:center;
+}
+.image, .blinking {
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    /* background: #1FB264; */
+    background:rgb(255,175,205);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid rgb(228,106,150);
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+    background: rgb(228,106,150);
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed rgb(255,175,205);
+    position: relative;
+    height: 70%;
+  }
+  
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: rgb(255,175,205);
+    border: 4px dashed #ffffff;
+  }
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(228,106,150);
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    animation: fadeIn 0.5s linear;
+}
